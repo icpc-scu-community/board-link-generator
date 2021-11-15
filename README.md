@@ -23,5 +23,8 @@ You can get your bitly api key from [here](https://app.bitly.com/settings/api/) 
 ### Output
 The output will be in one or two files
 - `output/output.json` contains the json data
-- `output/links.txt` contains all links (if api keys are applied inside .env)
+- `output/links.txt` contains all links (if api keys are applied inside .env) 
 
+<p align="center">
+  <img src="https://i.ibb.co/VJGyZ7f/Screenshot-from-2021-11-15-23-21-31.png" />
+</p>
