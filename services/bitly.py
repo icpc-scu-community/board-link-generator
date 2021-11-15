@@ -11,7 +11,7 @@ def shortenLink(link):
         "domain": "bit.ly",
         "long_url": link
     }  
-    headers = {"Authorization": f"Bearer {os.environ['bitly']}"}
+    headers = {"Authorization": f"Bearer {os.environ['bitly_api_key']}"}
 
     try:
         req = requests.post(url, json=data,headers=headers)

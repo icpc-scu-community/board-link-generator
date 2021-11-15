@@ -9,7 +9,7 @@ def generateBin(data):
     
     headers = {
     'Content-Type': 'application/json',
-    'X-Master-Key': os.environ['jsonbin'],
+    'X-Master-Key': os.environ['jsonbin_api_key'],
     'X-Bin-Private': 'false',
     }
 
