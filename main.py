@@ -21,7 +21,7 @@ def main():
 
     print(f"{bcolors.HEADER}Json data successfully created in output.json{bcolors.ENDC}")
 
-    if not 'jsonbin' in os.environ:
+    if not 'jsonbin_api_key' in os.environ:
         print(f"{bcolors.WARNING}bin will not be created. If you want to create a jsonbin, please specify jsonbin (api key) inside env file.")
         return 
     
@@ -35,7 +35,7 @@ def main():
     links_file.write(f"jsonbin url: {jsonbin_url}\n")
     links_file.write(f"Full board url: {board_url}\n")
 
-    if not 'bitly' in os.environ:
+    if not 'bitly_api_key' in os.environ:
         print(f"{bcolors.WARNING}Link will not be shorten. If you want to shorten the link please specify bitly (api key) inside env file.")
         return
     
