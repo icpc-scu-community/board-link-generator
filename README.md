@@ -19,7 +19,7 @@ If you want to automate the process even further, you can add two keys inside .e
 
 You can get your jsonbin api key from [here](https://jsonbin.io/api-keys). <br>
 You can get your rebrandly api key from [here](https://app.rebrandly.com/account/api-keys) and click generate token. <br>
-You can get your rebrandly workspace id from [here](https://developers.rebrandly.com/docs/list-workspaces-endpoint) put your api_key and click the button to get your workspace id. <br>
+You can get your rebrandly workspace id from [here](https://developers.rebrandly.com/reference/list-workspaces-endpoint) put your api_key and click the button to get your workspace id. <br>
 
 ### Output
 The output will be in one or two files
