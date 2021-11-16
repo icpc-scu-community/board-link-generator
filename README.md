@@ -15,15 +15,16 @@ trainees file must contain two columns with names (first row) and handles (secon
 ### Optional parameters
 If you want to automate the process even further, you can add two keys inside .env file
 - `jsonbin_api_key` to upload the json data.
-- `bitly_api_key` to shorten the final link.
+- `rebrandly_api_key` and `rebrandly_workspace_id` to shorten the final link.
 
 You can get your jsonbin api key from [here](https://jsonbin.io/api-keys). <br>
-You can get your bitly api key from [here](https://app.bitly.com/settings/api/) and click generate token. <br>
+You can get your rebrandly api key from [here](https://app.rebrandly.com/account/api-keys) and click generate token. <br>
+You can get your rebrandly workspace id from [here](https://developers.rebrandly.com/docs/list-workspaces-endpoint) put your api_key and click the button to get your workspace id. <br>
 
 ### Output
 The output will be in one or two files
 - `output/output.json` contains the json data
-- `output/links.txt` contains all links (if api keys are applied inside .env) 
+- `output/links.txt` contains all links (if api keys are applied) 
 
 <p align="center">
   <img src="https://i.ibb.co/VJGyZ7f/Screenshot-from-2021-11-15-23-21-31.png" />
