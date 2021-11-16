@@ -13,9 +13,13 @@ groups file must contain the full links of the sheets you want to add. <br>
 trainees file must contain two columns with names (first row) and handles (second row) for each trainee using csv format.
 
 ### Optional parameters
-If you want to automate the process even further, you can add two keys inside .env file
+If you want to automate the process even further, you can add three keys inside .env file
+
+you should run this order to automate the process
+- `pip install python-dotenv`
+
 - `jsonbin_api_key` to upload the json data.
-- `rebrandly_api_key` and `rebrandly_workspace_id` to shorten the final link.
+- `rebrandly_api_key` and `rebrandly_workspace_id` to shorten the final link with your custom slashtag.
 
 You can get your jsonbin api key from [here](https://jsonbin.io/api-keys). <br>
 You can get your rebrandly api key from [here](https://app.rebrandly.com/account/api-keys) and click generate token. <br>
@@ -27,5 +31,5 @@ The output will be in one or two files
 - `output/links.txt` contains all links (if api keys are applied) 
 
 <p align="center">
-  <img src="https://i.ibb.co/VJGyZ7f/Screenshot-from-2021-11-15-23-21-31.png" />
+  <img src="https://i.ibb.co/fXNmvsw/Parser.png" />
 </p>
