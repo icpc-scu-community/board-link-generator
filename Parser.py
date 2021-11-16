@@ -7,12 +7,10 @@ from Service.jsonbin import generateBin
 from Service.rebrandly import shortenLink
 from helpers.colors import bcolors
 
-def main():
-    
-    os.environ['jsonbin_api_key'] = "Your_jsonbin_abi_key"
-    os.environ['rebrandly_api_key'] = "Your_rebrandly_api_key"
-    
+def Parser():
+        
     print(f"{bcolors.HEADER}Welcome to Board link generator!\n{bcolors.ENDC}")
+    
     Board = {
         "groups" : Get_Groups(),
         "trainees" : Get_Trainees()
@@ -36,7 +34,11 @@ def main():
     
     if not 'rebrandly_api_key' in os.environ:
             print(f"{bcolors.WARNING}Link will not be shorten. If you want to shorten the link please specify rebrandly (api key) inside env file.")
-            return    
+            return
+        
+    if not 'rebrandly_work_space_id' in os.environ:
+            print(f"{bcolors.WARNING}Link will not be shorten. If you want to shorten the link please specify rebrandly (workspace id) inside env file.")
+            return
     
     shorten_url = shortenLink(Board_url)
     
@@ -49,4 +51,4 @@ def main():
         links_file.write(f"Shorten url: {shorten_url}\n")
          
 if __name__ == "__main__":
-    main()
+    Parser()
