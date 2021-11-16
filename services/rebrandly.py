@@ -10,13 +10,13 @@ def shortenLink(Link):
     linkRequest = {
         "destination": Link,
         "domain": { "fullName": "rebrand.ly" },
-        "slashtag": "newcomersboardv1",    
+        "slashtag": "Newcomers_Boards",    
         "title": "Newcomers Board"
     }
     requestHeaders = {
         "Content-type": "application/json",
-        "apikey": "237fe9d5beff49c6b5d4a9c137870679",
-        "workspace": "7a763333653b4d4ab7553bc868171fd4"
+        "apikey": "Your_api_key",
+        "workspace": "Your_WorkSpace_id"
     }
 
     r = requests.post("https://api.rebrandly.com/v1/links", data = json.dumps(linkRequest), headers = requestHeaders)
