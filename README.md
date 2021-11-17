@@ -34,7 +34,7 @@ The output will be in one or two files
 - `links.txt` contains all links (if api keys are applied) 
 
 <p align="center">
-  <img src="https://i.ibb.co/fXNmvsw/Parser.png" />
+  <img src="https://i.ibb.co/4M50yK3/Parser.png" />
 </p>
 
 ## Changelog
