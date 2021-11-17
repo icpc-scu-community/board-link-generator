@@ -15,19 +15,23 @@ trainees file must contain two columns with names (first row) and handles (secon
 ### Optional parameters
 If you want to automate the process even further, you can add three keys inside .env file
 
-you should run this order to automate the process
-- `pip install python-dotenv`
+In order to do this process you have to install python-dotenv using the following command(s)
+```
+sudo apt install python3-pip
+pip install python-dotenv
+```
 
+Create your .env file and add the following keys
 - `jsonbin_api_key` to upload the json data.
 - `cuttly_api_key` to shorten the final link with your custom slashtag.
 
-You can get your jsonbin api key from [here](https://jsonbin.io/api-keys). <br>
-You can get your cuttly api key from [here](https://cutt.ly/edit) and click generate token. <br>
+You can get your jsonbin api key from [jsonbin api dashboard](https://jsonbin.io/api-keys) after logging in. <br>
+You can get your cuttly api key from [cuttly dashboard](https://cutt.ly/edit) after logging in and click generate token. <br>
 
 ### Output
 The output will be in one or two files
-- `output/output.json` contains the json data
-- `output/links.txt` contains all links (if api keys are applied) 
+- `board.json` contains the json data
+- `links.txt` contains all links (if api keys are applied) 
 
 <p align="center">
   <img src="https://i.ibb.co/fXNmvsw/Parser.png" />
