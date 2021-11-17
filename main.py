@@ -3,8 +3,8 @@ import os
 from requests.api import head
 from helpers.trainees import getTrainees
 from helpers.groups import getGroups
-from services.jsonbin import generateBin
-from services.rebrandly import shortenLink
+from services.json_uploader import generateBin
+from services.link_shorten import shortenLink
 from helpers.colors import bcolors
 from dotenv import load_dotenv
 load_dotenv()
