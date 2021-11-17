@@ -36,3 +36,10 @@ The output will be in one or two files
 <p align="center">
   <img src="https://i.ibb.co/fXNmvsw/Parser.png" />
 </p>
+
+## Changelog
+### v1.1
+Including slashtag feature by using cuttly api instead of bitly.
+
+### v1.0
+First release using jsonbin and bitly for link shorten.
