@@ -19,11 +19,10 @@ you should run this order to automate the process
 - `pip install python-dotenv`
 
 - `jsonbin_api_key` to upload the json data.
-- `rebrandly_api_key` and `rebrandly_workspace_id` to shorten the final link with your custom slashtag.
+- `cuttly_api_key` to shorten the final link with your custom slashtag.
 
 You can get your jsonbin api key from [here](https://jsonbin.io/api-keys). <br>
-You can get your rebrandly api key from [here](https://app.rebrandly.com/account/api-keys) and click generate token. <br>
-You can get your rebrandly workspace id from [here](https://developers.rebrandly.com/reference/list-workspaces-endpoint) put your api_key and click the button to get your workspace id. <br>
+You can get your cuttly api key from [here](https://cutt.ly/edit) and click generate token. <br>
 
 ### Output
 The output will be in one or two files
