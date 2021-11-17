@@ -9,8 +9,8 @@ from helpers.colors import bcolors
 from dotenv import load_dotenv
 load_dotenv()
 
-def saveToFile(fileName, data):
-    with open(f'{fileName}', 'w+') as file:
+def saveToFile(fileName, mode, data):
+    with open(f'{fileName}', mode) as file:
         file.write(data)
 
 
@@ -35,7 +35,7 @@ def main():
     board =  getBoardData()
     
     # saving board data as json in board.json.
-    saveToFile('board.json', json.dumps(board))
+    saveToFile('board.json', 'w', json.dumps(board))
     
     print(f"{bcolors.OKYELLOW}\nJson data successfully created in board.json{bcolors.ENDC}")
     
@@ -46,13 +46,13 @@ def main():
     full_board_url = getFullBoardUrl(json_bin_url)
     
     # saving jsonbin link and full board url in links.txt.
-    saveToFile('links.txt', f"jsonbin url: {json_bin_url}\nFull board url: {full_board_url}\n")
+    saveToFile('links.txt', 'w+', f"jsonbin url: {json_bin_url}\nFull board url: {full_board_url}\n")
     
     # generating shorturl to the full board url
     shorten_url = shortenLink(full_board_url)
     
     # saving the shorten url in links.txt.
-    saveToFile('links.txt', f"Shorten url: {shorten_url}\n")
+    saveToFile('links.txt', 'a', f"Shorten url: {shorten_url}\n")
 
          
 if __name__ == "__main__":
