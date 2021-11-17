@@ -4,6 +4,10 @@ import sys
 from helpers.colors import bcolors
 
 def generateBin(data):
+    if not 'jsonbin_api_key' in os.environ:
+        print(f"{bcolors.WARNING}bin will not be created. If you want to create a jsonbin, please specify jsonbin (api key) inside env file.")
+        sys.exit()
+
     print("\nGenerating bin link..")
     url = 'https://api.jsonbin.io/v3/b'
     
