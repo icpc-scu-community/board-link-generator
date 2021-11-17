@@ -3,6 +3,7 @@ import requests
 import sys
 from helpers.colors import bcolors
 
+
 def generateBin(data):
     if not 'jsonbin_api_key' in os.environ:
         print(f"{bcolors.WARNING}bin will not be created. If you want to create a jsonbin, please specify jsonbin (api key) inside env file.")
@@ -10,11 +11,10 @@ def generateBin(data):
 
     print("\nGenerating bin link..")
     url = 'https://api.jsonbin.io/v3/b'
-    
     headers = {
-    'Content-Type': 'application/json',
-    'X-Master-Key': os.environ['jsonbin_api_key'],
-    'X-Bin-Private': 'false',
+        'Content-Type': 'application/json',
+        'X-Master-Key': os.getenv('jsonbin_api_key'),
+        'X-Bin-Private': 'false',
     }
 
     try:
@@ -33,7 +33,9 @@ def generateBin(data):
     
     jsonbin_url = 'https://api.jsonbin.io/b/{}'.format(jsonbin['metadata']['id'])
     
-    print(f"{bcolors.OKGREEN}ACCEPTED!{bcolors.ENDC}")
+    print(f"{bcolors.OKGREEN}ACCEPTED!\n{bcolors.ENDC}")
 
-    print(f"{bcolors.HEADER}Your board's bin link is: {jsonbin_url}{bcolors.ENDC}")
+    print(f"{bcolors.OKYELLOW}Your board's bin link is: {bcolors.ENDC}")
+    print(f"{bcolors.OKBLUE}{jsonbin_url}{bcolors.ENDC}")
+    
     return jsonbin_url
