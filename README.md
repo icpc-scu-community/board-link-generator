@@ -34,7 +34,7 @@ The output will be in one or two files
 - `links.txt` contains all links (if api keys are applied) 
 
 <p align="center">
-  <img src="https://ibb.co/zr2CyQH" />
+  <img src="![image](https://user-images.githubusercontent.com/63050133/142833736-4ee9e4ad-ae28-44ed-b181-2caeceab5278.png)" />
 </p>
 
 ## Changelog
