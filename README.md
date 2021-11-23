@@ -13,7 +13,7 @@ groups file must contain the full links of the sheets you want to add. <br>
 trainees file must contain two columns with names (first row) and handles (second row) for each trainee using csv format.
 
 ### Optional parameters
-If you want to automate the process even further, you can add three keys inside .env file
+If you want to automate the process even further, you can add two keys inside .env file
 
 In order to do this process you have to install python-dotenv using the following command(s)
 ```
