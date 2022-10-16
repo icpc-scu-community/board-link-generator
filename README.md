@@ -53,14 +53,14 @@ The output will be in one or two files
 
 ## Changelog
 
-## v1.2
+## [v1.2](https://github.com/icpc-scu-community/board-link-generator/tree/v1.2)
 
 In this version we added the ability to:
 
 - update the jsonbin bin with the new data.
 - Asks first to create shorten Link or not.
 
-### v1.1
+### [v1.1](https://github.com/icpc-scu-community/board-link-generator/tree/v1.1)
 
 Including slashtag feature by using cuttly api instead of bitly.
 
