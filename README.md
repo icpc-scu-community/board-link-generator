@@ -61,6 +61,7 @@ In this version we added the ability to:
 - Asks first to create shorten Link or not.
 
 ### [v1.1](https://github.com/icpc-scu-community/board-link-generator/tree/v1.1)
+
 Including slashtag feature by using cuttly api instead of bitly.
 
 ### v1.0
