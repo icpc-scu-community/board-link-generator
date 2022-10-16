@@ -11,11 +11,11 @@ def generateBin(data):
 
     print("\nGenerating bin link..")
     
-    # if BinId is exist then update the bin otherwise create a new bin
-    BinId = os.getenv('jsonbin_bin_id')
+    # if bin_id is exist then update the bin otherwise create a new bin
+    bin_id = os.getenv('jsonbin_bin_id')
     
-    if BinId:
-        url = f'https://api.jsonbin.io/v3/b/{BinId}'
+    if bin_id:
+        url = f'https://api.jsonbin.io/v3/b/{bin_id}'
     else:
         url = 'https://api.jsonbin.io/v3/b'
     
@@ -26,7 +26,7 @@ def generateBin(data):
     }
 
     try:
-        if BinId:
+        if bin_id:
             req = requests.put(url, headers=headers, json=data)
         else:
             req = requests.post(url, json=data, headers=headers)
@@ -42,7 +42,7 @@ def generateBin(data):
             print(f"{bcolors.FAIL}Error message: {jsonbin['message']}") 
         sys.exit() 
     
-    if BinId:
+    if bin_id:
         jsonbin_url = 'https://api.jsonbin.io/v3/b/{}'.format(jsonbin['metadata']['parentId'])
     else:
         jsonbin_url = 'https://api.jsonbin.io/v3/b/{}'.format(jsonbin['metadata']['id'])
