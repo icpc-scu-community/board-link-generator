@@ -49,7 +49,7 @@ The output will be in one or two files
 - `board.json` contains the json data
 - `links.txt` contains all links (if api keys are applied)
 
-![Demo Picture](https://i.ibb.co/fXNmvsw/Parser.png)
+![Demo Picture](https://i.ibb.co/x8jpHRf/Terminal.png)
 
 ## Changelog
 
