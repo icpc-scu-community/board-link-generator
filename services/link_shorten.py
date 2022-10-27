@@ -27,7 +27,7 @@ def shortenLink(Link):
         print(f"{bcolors.WARNING}Link will not be shorten. If you want to shorten the link please specify cuttly (api key) inside env file.")
         sys.exit()
 
-    print("Generating short url..\n")
+    print("\nGenerating short url..\n")
 
     while True:
 

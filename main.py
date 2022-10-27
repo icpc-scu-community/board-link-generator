@@ -48,12 +48,19 @@ def main():
     # saving jsonbin link and full board url in links.txt.
     saveToFile('links.txt', 'w+', f"jsonbin url: {json_bin_url}\nFull board url: {full_board_url}\n")
     
-    # generating shorturl to the full board url
-    shorten_url = shortenLink(full_board_url)
+    while True:
+        option = input("Do you want to shorten the board's link? (y/n): ")
+        if option.lower() == 'y' or option.lower() == 'n':
+            break
+        else:
+            print(f"{bcolors.WARNING}Please enter y or n ... \n{bcolors.ENDC}")
     
-    # saving the shorten url in links.txt.
-    saveToFile('links.txt', 'a', f"Shorten url: {shorten_url}\n")
-
-         
+    if option.lower() == 'y':
+        # generating shorturl to the full board url
+        shorten_url = shortenLink(full_board_url)
+        # saving the shorten url in links.txt.
+        saveToFile('links.txt', 'a', f"Shorten url: {shorten_url}\n")
+    
+     
 if __name__ == "__main__":
     main()
