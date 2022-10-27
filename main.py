@@ -21,7 +21,7 @@ def getBoardData():
     }
 
 def getFullBoardUrl(json_url):
-    board_url = "https://boardy.cf/?configs={}".format(json_url)
+    board_url = "https://boardy.tk/?configs={}".format(json_url)
     print(f"{bcolors.OKYELLOW}\nBoard successfully generated with the following link:")
     print(f"{bcolors.OKBLUE}{board_url}\n{bcolors.ENDC}")
     return board_url
@@ -42,7 +42,7 @@ def main():
     # generating bin for board's json
     json_bin_url = generateBin(board)
     
-    # getting the full url for boardy.cf using configs queryString.
+    # getting the full url for boardy.tk using configs queryString.
     full_board_url = getFullBoardUrl(json_bin_url)
     
     # saving jsonbin link and full board url in links.txt.
