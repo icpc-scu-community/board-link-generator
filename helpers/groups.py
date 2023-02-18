@@ -1,4 +1,3 @@
-import re
 import sys
 
 from helpers.colors import bcolors
@@ -22,8 +21,8 @@ def getGroups():
 
     groups_split = {}
     for group in groups:
-        group_id = re.search("group'\/\w+", group)[0].split("/")[1]
-        contest_id = re.search("contest\/\d+", group)[0].split("/")[1]
+        group_id = group.split("/")[-3]
+        contest_id = group.split("/")[-1]
 
         if group_id not in groups_split:
             groups_split
