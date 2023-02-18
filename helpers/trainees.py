@@ -1,6 +1,8 @@
-from helpers.colors import bcolors
-import sys
 import csv
+import sys
+
+from helpers.colors import bcolors
+
 
 def getTraineesData():
     result = []
