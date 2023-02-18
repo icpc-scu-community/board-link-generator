@@ -1,6 +1,8 @@
 import re
 import sys
+
 from helpers.colors import bcolors
+
 
 def getGroupData():
     groups = []
