@@ -2,3 +2,6 @@
 **/.env
 links.txt
 board.json
+
+# vscode files
+.vscode/
