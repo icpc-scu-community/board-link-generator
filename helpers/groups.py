@@ -1,6 +1,7 @@
-import re
 import sys
+
 from helpers.colors import bcolors
+
 
 def getGroupData():
     groups = []
@@ -15,22 +16,22 @@ def getGroups():
 
     try:
         groups = getGroupData()
-    except:
+    except FileNotFoundError:
         sys.exit("File groups.txt is missing inside data folder!")
-    
+
     groups_split = {}
     for group in groups:
-        group_id = re.search("group\/\w+", group)[0].split('/')[1]
-        contest_id = re.search("contest\/\d+", group)[0].split('/')[1]
-        
+        group_id = group.split("/")[-3]
+        contest_id = group.split("/")[-1]
+
         if group_id not in groups_split:
             groups_split
             groups_split[group_id] = []
         groups_split[group_id].append(contest_id)
-        
+
     result = []
     for group in groups_split:
-        result.append({'id': group, 'contests': groups_split[group]})
-    
+        result.append({"id": group, "contests": groups_split[group]})
+
     print(f"{bcolors.OKGREEN}ACCEPTED!{bcolors.ENDC}")
     return result

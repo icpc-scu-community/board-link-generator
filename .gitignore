@@ -1,4 +1,9 @@
 **/__pycache__/
 **/.env
+
+# files not needed to upload to github
 links.txt
 board.json
+
+# vscode files
+.vscode/
